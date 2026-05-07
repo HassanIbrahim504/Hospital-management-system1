@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
@@ -8,12 +9,12 @@ import LabResults from "./pages/LabResults";
 import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        
+
         <Route path="/dashboard" element={<><Navbar /><Dashboard /></>} />
         <Route path="/patients" element={<><Navbar /><Patients /></>} />
         <Route path="/appointments" element={<><Navbar /><Appointments /></>} />
@@ -24,5 +25,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
