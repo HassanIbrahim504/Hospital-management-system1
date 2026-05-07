@@ -15,47 +15,65 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
 
-        <Route path="/dashboard" element={
-          <div>
-            <Navbar />
-            <Dashboard />
-          </div>
-        } />
+        <Route 
+          path="/dashboard" 
+          element={
+            <div>
+              <Navbar />
+              <Dashboard />
+            </div>
+          } 
+        />
 
-        <Route path="/patients" element={
-          <div>
-            <Navbar />
-            <Patients />
-          </div>
-        } />
+        <Route 
+          path="/patients" 
+          element={
+            <div>
+              <Navbar />
+              <Patients />
+            </div>
+          } 
+        />
 
-        <Route path="/appointments" element={
-          <div>
-            <Navbar />
-            <Appointments />
-          </div>
-        } />
+        <Route 
+          path="/appointments" 
+          element={
+            <div>
+              <Navbar />
+              <Appointments />
+            </div>
+          } 
+        />
 
-        <Route path="/doctors" element={
-          <div>
-            <Navbar />
-            <Doctors />
-          </div>
-        } />
+        <Route 
+          path="/doctors" 
+          element={
+            <div>
+              <Navbar />
+              <Doctors />
+            </div>
+          } 
+        />
 
-        <Route path="/lab-results" element={
-          <div>
-            <Navbar />
-            <LabResults />
-          </div>
-        } />
+        <Route 
+          path="/lab-results" 
+          element={
+            <div>
+              <Navbar />
+              <LabResults />
+            </div>
+          } 
+        />
 
-        <Route path="/profile" element={
-          <div>
-            <Navbar />
-            <Profile />
-          </div>
-        } />
+        <Route 
+          path="/profile" 
+          element={
+            <div>
+              <Navbar />
+              <Profile />
+            </div>
+          } 
+        />
       </Routes>
     </Router>
   );
