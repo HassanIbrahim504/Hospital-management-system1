@@ -15,12 +15,47 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
 
-        <Route path="/dashboard" element={<><Navbar /><Dashboard /></>} />
-        <Route path="/patients" element={<><Navbar /><Patients /></>} />
-        <Route path="/appointments" element={<><Navbar /><Appointments /></>} />
-        <Route path="/doctors" element={<><Navbar /><Doctors /></>} />
-        <Route path="/lab-results" element={<><Navbar /><LabResults /></>} />
-        <Route path="/profile" element={<><Navbar /><Profile /></>} />
+        <Route path="/dashboard" element={
+          <div>
+            <Navbar />
+            <Dashboard />
+          </div>
+        } />
+
+        <Route path="/patients" element={
+          <div>
+            <Navbar />
+            <Patients />
+          </div>
+        } />
+
+        <Route path="/appointments" element={
+          <div>
+            <Navbar />
+            <Appointments />
+          </div>
+        } />
+
+        <Route path="/doctors" element={
+          <div>
+            <Navbar />
+            <Doctors />
+          </div>
+        } />
+
+        <Route path="/lab-results" element={
+          <div>
+            <Navbar />
+            <LabResults />
+          </div>
+        } />
+
+        <Route path="/profile" element={
+          <div>
+            <Navbar />
+            <Profile />
+          </div>
+        } />
       </Routes>
     </Router>
   );
